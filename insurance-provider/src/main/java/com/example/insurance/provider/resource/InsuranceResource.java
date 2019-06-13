@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/insurance-service")
 public class InsuranceResource {
 
-	@GetMapping("getUpdatePlans")
+	@GetMapping("/getUpdatePlans")
 	public List<String> getPlans() {
 		return Stream.of("premium","gold","platinum").collect(Collectors.toList());
 	}
